@@ -11,7 +11,7 @@ class User(AbstractUser):
         (SALE, "SALE"),
     )
     is_active = models.BooleanField(default=True)
-    role  =  models.SmallIntegerField(choices=ROLES)
+    role  =  models.SmallIntegerField(choices=ROLES, default =SALE)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 

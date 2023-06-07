@@ -1,11 +1,13 @@
-from django.shortcuts import render
-
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.generics import ListAPIView, CreateAPIView ,RetrieveUpdateAPIView
-from car_api.users.permisions import IsSale ,IsSupport
-from .serializers import InPutCarSerializer , OutPutCarSerializer
 from django_filters import rest_framework as filters
+from rest_framework import status
+from rest_framework.generics import (CreateAPIView, ListAPIView,
+                                     RetrieveUpdateAPIView)
+from rest_framework.response import Response
+
+from car_api.users.permisions import IsSale, IsSupport
+
+from .serializers import InPutCarSerializer, OutPutCarSerializer
+
 
 class CarListAPiView(ListAPIView):
     permission_classes = [IsSupport,]

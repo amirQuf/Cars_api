@@ -25,7 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # my apps
-    path('api/',include('car_api.car.urls')),
+    path('api/',include('car_api.Car.urls')),
     path('api/',include('car_api.users.urls')),
     
     #jwt

@@ -1,12 +1,12 @@
 from rest_framework.serializers import ModelSerializer , Serializer
 from .models import Car
-from car_api.user.serilizer import OutputUserSerializer
+from car_api.users.serializers import OutPutUserSerializer
 from rest_framework.exceptions import ValidationError
 
 
 
 class OutPutCarSerializer(Serializer) :
-    user = OutputUserSerializer()
+    user = OutPutUserSerializer()
     class Meta:
         model = Car
         fields = ["name",
