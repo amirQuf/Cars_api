@@ -28,3 +28,8 @@ class CarCreateAPIView(CreateAPIView):
             return Response({"message": str(e)}, status=status.HTTP_403_FORBIDDEN)
 
         return super().post(request, *args, **kwargs)
+
+
+class UpdateRetriveCarApiView(RetrieveUpdateAPIView):
+    permission_classes = []
+    serializer_class = InPutCarSerializer

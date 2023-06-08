@@ -8,7 +8,7 @@ class OutPutUserSerializer(ModelSerializer) :
         fields = "__all__"
 
 
-class InPutCarSerializer(ModelSerializer) :
+class InPutUserSerializer(ModelSerializer) :
     class Meta:
         model =User
         fields = "__all__"
