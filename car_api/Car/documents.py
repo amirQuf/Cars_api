@@ -16,7 +16,7 @@ class CarDocument(Document):
 
         fields = [
             "color",
-            "owner",
+            "owner_name",
             "number_of_cylinders",
         ]
 

@@ -2,7 +2,7 @@ from rest_framework.serializers import ModelSerializer , Serializer
 from .models import Car
 from car_api.users.serializers import OutPutUserSerializer
 from rest_framework.exceptions import ValidationError
-
+from .documents import CarDocument
 
 
 class OutPutCarSerializer(Serializer) :
@@ -35,7 +35,7 @@ class InPutCarSerializer(ModelSerializer) :
         fields = ["name",
             "number_of_cylinders",
             "number_of_passengers",
-            "Cylinder_volume"
+            "Cylinder_volume",
             "color",
             "owner_name",
             "created",
