@@ -1,5 +1,7 @@
 # Cars_api
+The project under the Django platform is related to a car sales company considering the maximum number of 10 billion products (cars).
 
+Characteristics of products (cars): car name, number of cylinders, number of passengers, car color, cylinder volume, owner's name
 
 
 # how to run project?
